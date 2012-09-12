@@ -1,7 +1,7 @@
 OauthAPI
 =====
 
-Oauth 2.0 for Java  in Google App Engine 
+Oauth 2.0 for Java on Google App Engine 
 
 
 //How to use
