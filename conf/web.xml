@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.5" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	
+	<!--start facebook Oauth -->
+	<servlet>
+		<servlet-name>FBlogin</servlet-name>
+		<servlet-class>OauthAPI.Fblogin</servlet-class>
+	</servlet>	
+	<servlet-mapping>
+		<servlet-name>FBlogin</servlet-name>
+		<url-pattern>/fblogin</url-pattern>
+	</servlet-mapping>	
+	<servlet>
+		<servlet-name>FBdecode</servlet-name>
+		<servlet-class>OauthAPI.getFBcode</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FBdecode</servlet-name>
+    <url-pattern>/getfbcode</url-pattern>
+    </servlet-mapping>
+    <servlet>
+		<servlet-name>checkUser</servlet-name>
+		<servlet-class>OauthAPI.checkUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>checkUser</servlet-name>
+		<url-pattern>/api/checkuser</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserProfile</servlet-name>
+		<servlet-class>OauthAPI.Getuser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserProfile</servlet-name>
+		<url-pattern>/api/user</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>LogoutHandler</servlet-name>
+		<servlet-class>OauthAPI.logout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutHandler</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping> 
+	
+</web-app>
