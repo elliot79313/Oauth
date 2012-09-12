@@ -26,7 +26,7 @@ class FacebookOauth implements OauthUser{
 
 	final private static String appId="appid";
 	final private static String secret ="secret key";
-	final private static String redirect_uri = "redirect_url";
+	final private static String redirect_uri = "redirect_url"; 
 	
 	
 	private HttpSession session;
