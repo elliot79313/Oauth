@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<queue-entries>
+  <queue>
+    <name>checkuser</name>
+    <rate>20/s</rate>
+    <bucket-size>40</bucket-size>
+  </queue>
+</queue-entries>
